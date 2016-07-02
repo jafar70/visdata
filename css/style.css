@@ -155,3 +155,25 @@ h4, p{
 .footer{
     background-color: black;
 }
+
+.heading{
+    text-align: center;
+    background-color: black;
+    font-size: 4.6vw;  
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.heading p{
+    color: white;
+}
+
+.heading h1{
+    color:#0066cc;
+}
+
+.beautiful{
+    background-color: #0066cc;
+    color: white;
+    padding: 90px;
+}
