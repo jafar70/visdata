@@ -124,3 +124,34 @@ h4, p{
 .item > img{
     margin: auto; 
 }
+
+.col-md-4, h2, p{
+    text-align: center
+}
+
+.app{
+    background-color:#d9d9d9;
+    margin-top: 30px;
+}
+
+.benefits .col-md-3 {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 48px;
+    text-align: center
+}
+
+.benefits{
+    padding-top: 30px;
+}
+
+.benefits .col-md-3:hover,
+.benefits .col-md-3:focus{
+    background-color: #cccccc;
+    color: #0066cc;
+}
+
+.footer{
+    background-color: black;
+}
