@@ -173,7 +173,7 @@ h4, p{
 .beautiful{
     background-color: #0066cc;
     color: white;
-    padding: 90px;
+    padding: 80px;
 }
 
 .aboutus p{
@@ -188,5 +188,48 @@ h4, p{
 }
 
 .aboutus{
-    padding:60px;
+    padding:20px;
+   
+}
+
+#work{
+    padding-left: 30px;
+    color: black;
+}
+
+.history{
+    padding: 30px;
+    background-color: #0066cc;
+    
+}
+
+.history >  p{
+     text-align: left;
+     color: white;
+}
+
+.history h4{
+    font-weight: bold;
+    color: white;
+}
+
+.how{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    margin-right:0px;
+}
+
+.how > p{
+    text-align: left;
+}
+
+.how h4{
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.clients{
+    padding-top:20px;
+   
 }
