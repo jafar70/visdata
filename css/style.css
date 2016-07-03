@@ -158,10 +158,8 @@ h4, p{
 
 .heading{
     text-align: center;
-    background-color: black;
     font-size: 4.6vw;  
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding:50px;
 }
 
 .heading p{
@@ -176,4 +174,19 @@ h4, p{
     background-color: #0066cc;
     color: white;
     padding: 90px;
+}
+
+.aboutus p{
+    text-align:left;
+    
+}
+
+.aboutus h4{
+    color:#0066cc;
+    font-weight:bold;
+    padding-bottom:15px;
+}
+
+.aboutus{
+    padding:60px;
 }
