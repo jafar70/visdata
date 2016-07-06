@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Navbar tutorial from Jafar Salami">
+    <meta name="author" content="Jafar Salami">
+    <title>Visdata</title>
+    <link rel="icon" type="image/png" href="http://www.madeinthemidlands.com/assets/uploads/members/508/logo_small.jpg">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9e87e5dce5.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hover.css') }}" type="text/css" />
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.11.3.min.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jssor.slider.mini.js') }}"></script>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i> Menu
+          </button>
+          <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/Visdata-Logo.png') }}" class="img-responsive"></img></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li> 
+            <li><a href="/aboutus">About Us</a></li>
+            <li class="dropdown">
+              <a href="/products" class="dropdown-toggle disabled" data-toggle="dropdown">Products <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+             	  <li><a href="/status">Status Manufacturing</a></li>
+                <li class="active"><a href="/stdc">Smart Time Data Capture</a></li>
+                <li><a href="/vismabusiness">Visma Business</a></li>
+                <li><a href="/vismabusiness">VisBoard</a></li>
+              </ul>
+            </li>             
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    <div class="heading">
+      <div class="container">
+        <h1>Smart Time Data Capture</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="{{ url_for('static', filename='img/stdc.jpg') }}" class="img-responsive" style="display: block;margin: 0 auto;"></img>
+        </div>
+      </div>    
+    </div>
+    <div class="container">
+      <div class="col-md-12 info">
+        <h4>Introducing Smart Time DC from Visdata</h4>
+        <p>SmartTime - Our Specialist Data Capture Solution, is a simple mechanism to capture data from the shop floor and present it in a meaningful and useful manor through forms of management reporting and alerts.</p>
+        
+        <h4>The Benefits</h4>
+        <p>Our Shop Floor Data Capture (SFDC) system uses real time data to reduce costs, increase resource effectiveness and deliver quality product to your customer on time. Using bar-coded documentation and real time machine monitoring First ALERT can warn you of problems as they occur. This system will reduce costs, save waste and increase profitability. On line Shop Floor Data Capture is the capability to link machines, cells or departments to a resident computer based manufacturing system. This ensures that shop floor data is captured and processed on-line and in real time, thus eliminating the necessity for manual completion of documentation.</p>
+     
+        <h4>Features</h4>
+          <ul>
+            <li>Easy and intuitive to use </li>
+            <li>Quick to implement</li>
+            <li>Fast payback</li>
+            <li>ALERTS the user to problems as they occur, in real time </li>
+            <li>Drill down facilities to investigate and resolve issues quickly </li>
+            <li>Comprehensive history assists with improvements in manufacturing and quality </li>
+            <li>Links to back office and other systems </li>
+            <li>Eliminates data entry duplication and transcription errors </li>
+          </ul>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="container">
+          <center>
+              <p style="font-size:25px;color:white;" >E-Mail: <a href="mailto:info@visdata.co.uk" style="color:white;">info@visdata.co.uk	</a>&nbsp&nbsp&nbsp&nbsp  Phone:01283 711441</p>
+              <p style="font-size:16px;"><a href="https://www.linkedin.com/company/the-gould-group-international-ltd?trk=biz-brand-tree-co-logo" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/VisdataLtd" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp&nbsp <a href="https://www.facebook.com/VisdataLtd/" style="color:white;">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
+              <p style="color:white;">&copy; <a href="http://josalami.pythonanywhere.com/" style="color:white;" >Created by Ja'far Salami</a></p>
+          </center>
+        </div>
+    </div>
+        
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  </body>
+</html>

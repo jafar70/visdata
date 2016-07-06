@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Navbar tutorial from Jafar Salami">
+    <meta name="author" content="Jafar Salami">
+    <title>Visdata</title>
+    <link rel="icon" type="image/png" href="http://www.madeinthemidlands.com/assets/uploads/members/508/logo_small.jpg">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9e87e5dce5.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hover.css') }}" type="text/css" />
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.11.3.min.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jssor.slider.mini.js') }}"></script>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i> Menu
+          </button>
+          <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='img/Visdata-Logo.png') }}" class="img-responsive"></img></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li> 
+            <li><a href="/aboutus">About Us</a></li>
+            <li class="dropdown">
+              <a href="/products" class="dropdown-toggle disabled" data-toggle="dropdown">Products <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+             	  <li class="active"><a href="/status">Status Manufacturing</a></li>
+                <li><a href="/stdc">Smart Time Data Capture</a></li>
+                <li><a href="/vismabusiness">Visma Business</a></li>
+                <li><a href="/vismabusiness">VisBoard</a></li>
+              </ul>
+            </li>             
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    <div class="heading">
+      <div class="container">
+        <h1>Status Manufacturing</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="{{ url_for('static', filename='img/status_main.jpg') }}" class="img-responsive" style="display: block;margin: 0 auto;"></img>
+        </div>
+      </div>    
+    </div>
+    <div class="container">
+      <div class="col-md-12 info">
+        <h4>Introducing StatuS Manufacturing from Visdata</h4>
+        <p>StatuS Manufacturing - Our flagship ERP/MRP system, is a powerful yet simple to use, production control and management information tool providing a seamless link from Estimating through Production Control to Despatch and Invoicing.</p>
+        
+        <h4>Is It for you?</h4>
+        <p><b>StatuS manufacturing</b> is a fully integrated manufacturing package specifically designed to meet the needs of batch manufacturers of assemblies, components and/or finished product.</p>
+      
+        <h4>What is it and how does it work?</h4>
+        <p>The system allows the user to develop and maintain an accurate estimate, which is then used to generate a quotation for the client. The estimate includes all of the elements of the job, including material specification, manufacturing route etc., and will provide alternative batch prices. Once accepted by the client, the estimate is converted into a job cost planning sheet and route card. This data forms the foundation for the fully functional and comprehensive production control system. The result of this is that the user is ensured of manufacturing for profit.</p>
+      
+        <h4>The Benefits</h4>
+          <ul>
+            <li>Developed with batch manufacturers over twenty years</li>
+            <li>Mirrors your existing way of working</li>
+            <li>Assists with the effective management of resources</li>
+            <li>Helps control costs</li>
+            <li>Assists with production planning and control</li>
+            <li>Provides comprehensive history</li>
+            <li>Links to accounting, payroll, data capture, quality and other systems.</li>
+          </ul>
+        <p>The specialist system that has been developed for batch manufacturers.</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="container">
+          <center>
+              <p style="font-size:25px;color:white;" >E-Mail: <a href="mailto:info@visdata.co.uk" style="color:white;">info@visdata.co.uk	</a>&nbsp&nbsp&nbsp&nbsp  Phone:01283 711441</p>
+              <p style="font-size:16px;"><a href="https://www.linkedin.com/company/the-gould-group-international-ltd?trk=biz-brand-tree-co-logo" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/VisdataLtd" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp&nbsp <a href="https://www.facebook.com/VisdataLtd/" style="color:white;">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
+              <p style="color:white;">&copy; <a href="http://josalami.pythonanywhere.com/" style="color:white;" >Created by Ja'far Salami</a></p>
+          </center>
+        </div>
+    </div>
+        
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  </body>
+</html>

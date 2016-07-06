@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h1 style="color:#0066cc;text-align:center;padding:30px;">Contact</h1>
+
+  {% if success %}
+    <p>Thank you for your message. We'll get back to you shortly.</p>
+  
+  {% else %} 
+    <h3 style="text-align:center;">Find out how Visdata can benefit your organisation. Complete the form below <br>for a call-back within 24 hours. Alternatively you can call us on 01283 711441.</h3>
+    
+    <div class="col-md-4">
+         &nbsp&nbsp&nbsp
+    </div> 
+    
+    <div class="col-md-4" >
+      {% for message in form.name.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      
+      {% for message in form.email.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      
+      {% for message in form.subject.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      
+      {% for message in form.message.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      
+      <form action="{{ url_for('contact') }}" method=post style="text-align: left;" >
+        {{ form.hidden_tag() }}
+        
+        {{ form.name.label }}
+        {{ form.name }}
+        
+        {{ form.email.label }}
+        {{ form.email }}
+        
+        {{ form.subject.label }}
+        {{ form.subject }}
+        
+        {{ form.message.label }}
+        {{ form.message }}
+        
+        {{ form.submit }}
+      </form>
+      <br><br>
+      </div>
+    
+      <div class="col-md-4">
+        &nbsp
+      </div>
+      
+       <div class="details">
+          <div class="col-md-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2414.2907787386866!2d-1.701742384183462!3d52.76302907986106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a06b2fe537369%3A0x9a288b5464a72dd1!2sVisdata+Ltd!5e0!3m2!1sen!2suk!4v1467832380267"></iframe>
+            </div>
+          </div>
+      </div>
+      
+      
+           
+      <!----src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2414.2907787386866!2d-1.701742384183462!3d52.76302907986106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a06b2fe537369%3A0x9a288b5464a72dd1!2sVisdata+Ltd!5e0!3m2!1sen!2suk!4v1467831857922"-----> 
+    
+  {% endif %}
+{% endblock %} 
